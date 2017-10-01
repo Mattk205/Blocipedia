@@ -10,6 +10,8 @@ gem 'rails', '~> 5.1.2'
 
 gem 'bootstrap-sass'
 
+gem 'devise'
+
 group :production do
   # Use pg as the production database for Active Record
   gem 'pg'
