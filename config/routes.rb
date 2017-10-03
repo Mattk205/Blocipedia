@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  resources :wikis
 
   root to: 'welcome#index'
 

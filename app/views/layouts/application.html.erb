@@ -14,7 +14,9 @@
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <ul class="nav nav-tabs">
-        <li><%= link_to "Home", welcome_index_path %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Wiki", wikis_path %></li>
+        <li><%= link_to "New Wiki", new_wiki_path %></li>
         <div class = "pull-right">
           <% if user_signed_in? %>
           Signed in as: <strong><%= current_user.email %></strong> |
