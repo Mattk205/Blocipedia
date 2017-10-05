@@ -1,7 +1,7 @@
 <h1 class='container'>
   <%= @wiki.title %>
 </h1>
-<div class="container-fluid">
+<div class="wiki container-fluid">
     <p ><%= markdown(@wiki.body) %> </p>
     <small class='pull-right'>
       submitted <%= time_ago_in_words(@wiki.created_at) %> ago by <%= @wiki.user.email %>

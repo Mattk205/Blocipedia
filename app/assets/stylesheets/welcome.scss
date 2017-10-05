@@ -1,8 +1,13 @@
 .jumbotron .sub-text {
   background-color: white;
   border-radius: 5px;
+  border: 1px solid black;
+  padding: 3px;
 }
 
+.jumbotron {
+  border: 2px solid black;
+}
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
