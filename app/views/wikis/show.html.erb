@@ -4,9 +4,10 @@
 <div class="container-fluid">
   <div class="wiki-body col-md-4">
     <p ><%= markdown(@wiki.body) %> </p>
-    <p>
+    <small>
       submitted <%= time_ago_in_words(@wiki.created_at) %> ago by <%= @wiki.user.email %>
-    </p>
+    </small>
+    </div>
   </div>
     <div class="col-md-4">
       <%= link_to "Edit Wiki", edit_wiki_path(@wiki), class: 'btn btn-success' %>
