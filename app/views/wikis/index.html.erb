@@ -1,5 +1,9 @@
 <h1>Wikis</h1>
-
+<div class='row'>
+<div class="col-md-4">
+  <%= link_to "New Wiki", new_wiki_path, class: 'btn btn-success' %>
+</div>
+</div>
 <div class="row">
   <div class="col-md-8">
 <!-- #7 -->
@@ -14,7 +18,5 @@
       </div>
     <% end %>
   </div>
-  <div class="col-md-4">
-    <%= link_to "New Wiki", new_wiki_path, class: 'btn btn-success' %>
-  </div>
+
 </div>
