@@ -4,7 +4,8 @@ require 'faker'
 5.times do
   User.create!(
   email:    Faker::Internet.email,
-  password: Faker::Internet.password
+  password: Faker::Internet.password,
+  role: "Standard"
   )
 end
 users = User.all
