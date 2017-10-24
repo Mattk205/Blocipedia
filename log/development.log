@@ -6575,3 +6575,992 @@ Processing by WikisController#show as HTML
 Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-08 16:19:53 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 303ms (Views: 293.4ms | ActiveRecord: 0.0ms)
+
+
+  
+Pundit::PolicyScopingNotPerformedError (WelcomeController):
+  
+pundit (1.1.0) lib/pundit.rb:178:in `verify_policy_scoped'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:235:in `block in halting_and_conditional'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `block in invoke_after'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `invoke_after'
+activesupport (5.1.4) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-08 16:20:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 23.8ms)
+
+
+Started GET "/wikis" for 127.0.0.1 at 2017-10-08 16:20:27 -0400
+Processing by WikisController#index as HTML
+  Rendering wikis/index.html.erb within layouts/application
+  [1m[36mWiki Load (3.7ms)[0m  [1m[34mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 52ms (Views: 40.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/wikis/3" for 127.0.0.1 at 2017-10-08 16:20:28 -0400
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.3ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering wikis/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered wikis/show.html.erb within layouts/application (412.4ms)
+Completed 500 Internal Server Error in 440ms (Views: 433.1ms | ActiveRecord: 1.1ms)
+
+
+  
+Pundit::AuthorizationNotPerformedError (WikisController):
+  
+pundit (1.1.0) lib/pundit.rb:167:in `verify_authorized'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:235:in `block in halting_and_conditional'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `block in invoke_after'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `invoke_after'
+activesupport (5.1.4) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-08 16:22:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-08 16:22:16 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (31.1ms)
+Completed 500 Internal Server Error in 61ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+  
+Pundit::AuthorizationNotPerformedError (Users::SessionsController):
+  
+pundit (1.1.0) lib/pundit.rb:167:in `verify_authorized'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:235:in `block in halting_and_conditional'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `block in invoke_after'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:511:in `invoke_after'
+activesupport (5.1.4) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-08 16:22:51 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 42ms (Views: 29.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-08 16:22:53 -0400
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ekz2fxBIq1gdB4gqO6FEzGHXcgtic8C04k+eUizF0mmcPg/8SOl3fxniEx5FmvYA9HIswbasSqMRG+5F97dPjQ==", "user"=>{"email"=>"mattk205@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mattk205@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-10-08 20:22:53.823066"], ["sign_in_count", 2], ["updated_at", "2017-10-08 20:22:53.823807"], ["id", 12]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 155ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-08 16:22:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 14:49:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 368ms (Views: 359.6ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-10-24 14:49:17 -0400
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"U/5Sun7Xt4vkcT6meEZx1dOBXh5/rjB2SVlxa7nXIdsOYDdBtGS9A2tP/shS9srtYGlTIedATpDcBXocnp0F/Q=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 439ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 14:49:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-10-24 15:07:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-24 15:07:17 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 233ms (Views: 221.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-24 15:07:22 -0400
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fGrhsjv2/7v+4AlErAyh3B3C61ogSD5AOpLNQHlZGBdlzsUwl9K3l5YYPBSYL0DCdCpefAC9WJcPT2JFk7Vmfw==", "user"=>{"email"=>"mattk205@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mattk205@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007f8424714ff8>
+Did you mean?  confirmed?):
+  
+activemodel (5.1.4) lib/active_model/attribute_methods.rb:432:in `method_missing'
+devise (4.3.0) lib/devise/models/confirmable.rb:105:in `confirmed?'
+devise (4.3.0) lib/devise/models/confirmable.rb:186:in `confirmation_required?'
+devise (4.3.0) lib/devise/models/confirmable.rb:143:in `active_for_authentication?'
+devise (4.3.0) lib/devise/hooks/activatable.rb:5:in `block in <top (required)>'
+warden (1.2.7) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.7) lib/warden/hooks.rb:10:in `each'
+warden (1.2.7) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.7) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.7) lib/warden/proxy.rb:180:in `set_user'
+warden (1.2.7) lib/warden/proxy.rb:328:in `_perform_authentication'
+warden (1.2.7) lib/warden/proxy.rb:128:in `authenticate!'
+devise (4.3.0) app/controllers/devise/sessions_controller.rb:17:in `create'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-10-24 15:07:29 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-10-24 15:07:41 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fMy8n+XsuFLlKlbrSsfBGDG+OxYwr6/ZmyoOgjJCys3Ah5b7ukKmhB6LjB+jJGP5W8Zc2j0gWigdSEiJjxh/UA==", "user"=>{"email"=>"mattk205@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mattk205@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 170ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 15:07:55 -0400
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-24 15:07:55 -0400
+Processing by Users::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-24 15:08:03 -0400
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6200qAzG1Fg9rhwAnFi8FdzilDIHdrawASrDOeIy4K66GPF7Pn2zGJKCaklaS02aYEi0T3Q17AnS3lr3+6LI7g==", "user"=>{"email"=>"mattk205@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mattk205@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007f8424266308>
+Did you mean?  confirmed?):
+  
+activemodel (5.1.4) lib/active_model/attribute_methods.rb:432:in `method_missing'
+devise (4.3.0) lib/devise/models/confirmable.rb:105:in `confirmed?'
+devise (4.3.0) lib/devise/models/confirmable.rb:186:in `confirmation_required?'
+devise (4.3.0) lib/devise/models/confirmable.rb:143:in `active_for_authentication?'
+devise (4.3.0) lib/devise/hooks/activatable.rb:5:in `block in <top (required)>'
+warden (1.2.7) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.7) lib/warden/hooks.rb:10:in `each'
+warden (1.2.7) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.7) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.7) lib/warden/proxy.rb:180:in `set_user'
+warden (1.2.7) lib/warden/proxy.rb:328:in `_perform_authentication'
+warden (1.2.7) lib/warden/proxy.rb:128:in `authenticate!'
+devise (4.3.0) app/controllers/devise/sessions_controller.rb:17:in `create'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.4) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "whitney_dare@halvorson.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "whitney_dare@halvorson.com"], ["encrypted_password", "$2a$11$nJCCaD8tHRokfJhLOo4Bn.WQ/kqlbhouQhbFIc5KdDlm80FS/Z7Xq"], ["role", 0], ["created_at", "2017-10-24 19:16:40.749858"], ["updated_at", "2017-10-24 19:16:40.749858"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mohammed@starkaltenwerth.biz"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "mohammed@starkaltenwerth.biz"], ["encrypted_password", "$2a$11$F.zeTyH2AWo8ABDNhf9LU.ixj88iouUvHZOtfI1g6LYk3BE.MlVVW"], ["role", 0], ["created_at", "2017-10-24 19:16:40.867728"], ["updated_at", "2017-10-24 19:16:40.867728"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "theron_hintz@barrowshand.io"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "theron_hintz@barrowshand.io"], ["encrypted_password", "$2a$11$.TFvzbPhyVqEdR7l1Ek8S.wJ6RNfopkwVcUt2Y.ymaZgPk.NH.3Di"], ["role", 0], ["created_at", "2017-10-24 19:16:40.986799"], ["updated_at", "2017-10-24 19:16:40.986799"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dane@doylesimonis.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "dane@doylesimonis.com"], ["encrypted_password", "$2a$11$YD4TtIuwTeM1/K5RZu9MueNVgm4UFgYJ.GMFrJOdTQQMUn9T1MoIS"], ["role", 0], ["created_at", "2017-10-24 19:16:41.106787"], ["updated_at", "2017-10-24 19:16:41.106787"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ardella_schulist@bins.name"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "ardella_schulist@bins.name"], ["encrypted_password", "$2a$11$P3XjU6UxSNJv5GTbXli9q.olyYaOvI5az0A4iijEcGUoFijnY2L4G"], ["role", 0], ["created_at", "2017-10-24 19:16:41.226682"], ["updated_at", "2017-10-24 19:16:41.226682"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Est officiis minus in."], ["body", "Ut aut nostrum earum magni corporis nesciunt. Qui magni ut perferendis deleniti dicta ut dolores. Exercitationem iure dolores non inventore."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.261318"], ["updated_at", "2017-10-24 19:16:41.261318"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-11-29 19:11:25.263864"], ["updated_at", "2017-10-24 19:16:41.264340"], ["id", 101]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Praesentium illo tempore atque quaerat occaecati ut."], ["body", "Consequatur rem labore dolor autem maxime aut. Consequatur vel nihil."], ["user_id", 6], ["created_at", "2017-10-24 19:16:41.267542"], ["updated_at", "2017-10-24 19:16:41.267542"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-12-17 18:08:37.270041"], ["updated_at", "2017-10-24 19:16:41.270475"], ["id", 102]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Facere nisi qui sed voluptatem ut aperiam voluptatibus."], ["body", "Hic in voluptas enim rerum minima. Voluptas ad cupiditate placeat possimus enim qui."], ["user_id", 13], ["created_at", "2017-10-24 19:16:41.273206"], ["updated_at", "2017-10-24 19:16:41.273206"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-08-14 03:28:08.276420"], ["updated_at", "2017-10-24 19:16:41.276868"], ["id", 103]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Repellat perferendis odit delectus distinctio non quis saepe voluptatum."], ["body", "Sapiente fugit quam enim corporis vero quos. Eveniet maiores laudantium ut architecto eum."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.279784"], ["updated_at", "2017-10-24 19:16:41.279784"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-06-28 09:42:56.282191"], ["updated_at", "2017-10-24 19:16:41.282637"], ["id", 104]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ipsam dicta itaque error iste."], ["body", "Sunt facere minima suscipit dolorum quod est est. Ut voluptas expedita dignissimos dolor est labore quibusdam. Provident officiis quia consequatur sint quam enim id. Quia exercitationem voluptate consequatur perspiciatis."], ["user_id", 16], ["created_at", "2017-10-24 19:16:41.285438"], ["updated_at", "2017-10-24 19:16:41.285438"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-02-21 18:48:05.288637"], ["updated_at", "2017-10-24 19:16:41.289174"], ["id", 105]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aliquid beatae sunt sapiente deleniti natus."], ["body", "Ullam laudantium eius. Recusandae officia eos deserunt. Error quo sint impedit ut. Illum consequatur sequi incidunt."], ["user_id", 10], ["created_at", "2017-10-24 19:16:41.293377"], ["updated_at", "2017-10-24 19:16:41.293377"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-08-04 12:23:14.295889"], ["updated_at", "2017-10-24 19:16:41.296388"], ["id", 106]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aut molestias ut doloribus inventore."], ["body", "Distinctio velit eos consequatur ut. Accusamus voluptatibus molestiae ullam ea."], ["user_id", 17], ["created_at", "2017-10-24 19:16:41.299688"], ["updated_at", "2017-10-24 19:16:41.299688"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-12-11 00:23:39.302724"], ["updated_at", "2017-10-24 19:16:41.303245"], ["id", 107]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Vitae laboriosam velit animi."], ["body", "Repellat ea recusandae consectetur. Nisi nihil et iste. Quas itaque cum dignissimos. Corporis blanditiis asperiores ea similique ipsam."], ["user_id", 6], ["created_at", "2017-10-24 19:16:41.306428"], ["updated_at", "2017-10-24 19:16:41.306428"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-08-04 15:34:35.311335"], ["updated_at", "2017-10-24 19:16:41.311824"], ["id", 108]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Harum perspiciatis deserunt non minima est vitae autem ducimus."], ["body", "Reprehenderit repellat sit aut quae et cum. Ipsam nihil et. Optio occaecati ea sed velit et."], ["user_id", 3], ["created_at", "2017-10-24 19:16:41.315136"], ["updated_at", "2017-10-24 19:16:41.315136"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-09-03 00:09:15.318018"], ["updated_at", "2017-10-24 19:16:41.318569"], ["id", 109]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "In facere velit rerum sunt consequuntur qui sed."], ["body", "Et odit iusto et voluptatem eum dolore. Culpa quia qui voluptate corrupti molestias sed praesentium. Quia fugit in modi."], ["user_id", 16], ["created_at", "2017-10-24 19:16:41.321604"], ["updated_at", "2017-10-24 19:16:41.321604"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-02-14 23:28:46.324081"], ["updated_at", "2017-10-24 19:16:41.324595"], ["id", 110]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Consectetur minus dolor magnam sint voluptas."], ["body", "Cum fuga eaque quis. Et a nihil. Libero recusandae sunt. Quas laborum molestiae."], ["user_id", 11], ["created_at", "2017-10-24 19:16:41.327521"], ["updated_at", "2017-10-24 19:16:41.327521"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-01-26 23:23:41.330724"], ["updated_at", "2017-10-24 19:16:41.331236"], ["id", 111]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ducimus labore aliquid rerum blanditiis aliquam."], ["body", "Doloribus asperiores quis atque nesciunt ducimus. Ea alias et."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.334059"], ["updated_at", "2017-10-24 19:16:41.334059"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-09-21 12:32:59.336471"], ["updated_at", "2017-10-24 19:16:41.336969"], ["id", 112]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Numquam est eos ut."], ["body", "Ad quia aut quis illum ut molestias qui. Velit beatae dolorem consequatur tenetur pariatur. Ipsum beatae hic repellendus non."], ["user_id", 14], ["created_at", "2017-10-24 19:16:41.340083"], ["updated_at", "2017-10-24 19:16:41.340083"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-03-15 13:42:44.342634"], ["updated_at", "2017-10-24 19:16:41.343126"], ["id", 113]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Omnis illo autem porro."], ["body", "Sed iure quidem. Qui voluptate dolores et dolorem nam ea cumque. Provident debitis sit."], ["user_id", 12], ["created_at", "2017-10-24 19:16:41.346618"], ["updated_at", "2017-10-24 19:16:41.346618"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-06-05 18:11:42.349208"], ["updated_at", "2017-10-24 19:16:41.349717"], ["id", 114]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Molestias ut excepturi praesentium vitae nisi provident numquam."], ["body", "Eos consequatur eligendi quis voluptatem laudantium perferendis et. Quaerat qui repellendus quam nisi. Voluptatem et incidunt eos enim."], ["user_id", 8], ["created_at", "2017-10-24 19:16:41.353034"], ["updated_at", "2017-10-24 19:16:41.353034"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-01-02 03:19:18.356876"], ["updated_at", "2017-10-24 19:16:41.357315"], ["id", 115]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Debitis delectus enim eveniet impedit qui facere."], ["body", "Consequuntur sapiente voluptatibus nihil eum iste ea. Omnis dolores rerum voluptate veniam. Praesentium illo accusantium harum est amet."], ["user_id", 17], ["created_at", "2017-10-24 19:16:41.360288"], ["updated_at", "2017-10-24 19:16:41.360288"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-01-27 13:16:26.364171"], ["updated_at", "2017-10-24 19:16:41.364739"], ["id", 116]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quas et natus dolorum incidunt sed consequatur."], ["body", "Dolore quis ab repellendus aut officiis voluptate unde. Sunt quod incidunt quibusdam. Temporibus ab ut est est tempora dolores perspiciatis."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.367980"], ["updated_at", "2017-10-24 19:16:41.367980"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-01-28 20:15:01.372300"], ["updated_at", "2017-10-24 19:16:41.372803"], ["id", 117]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Id consequatur alias reiciendis praesentium recusandae nam."], ["body", "Ut explicabo dolores. Laborum necessitatibus autem et ipsam illum aut. Repellendus perferendis facilis hic optio. Fugit ipsa corporis numquam mollitia fuga recusandae dolorem."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.375923"], ["updated_at", "2017-10-24 19:16:41.375923"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-05-11 20:06:27.378840"], ["updated_at", "2017-10-24 19:16:41.379334"], ["id", 118]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Architecto praesentium suscipit velit id at consequatur."], ["body", "Voluptatibus sint ut blanditiis. Et dicta ab exercitationem voluptatem."], ["user_id", 17], ["created_at", "2017-10-24 19:16:41.381968"], ["updated_at", "2017-10-24 19:16:41.381968"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-11-30 22:38:11.386217"], ["updated_at", "2017-10-24 19:16:41.387177"], ["id", 119]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nulla rerum non quia a."], ["body", "Minima quae id nobis tenetur aut. Modi et quasi. Commodi omnis est et ipsum ut amet possimus. Enim dolor et maiores et non."], ["user_id", 2], ["created_at", "2017-10-24 19:16:41.391532"], ["updated_at", "2017-10-24 19:16:41.391532"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-03-23 10:51:44.395762"], ["updated_at", "2017-10-24 19:16:41.396271"], ["id", 120]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nostrum sequi aspernatur expedita similique et."], ["body", "Labore ut rerum nobis quidem. Velit quaerat odio corporis quo illum rerum. Alias deserunt excepturi rerum."], ["user_id", 11], ["created_at", "2017-10-24 19:16:41.400703"], ["updated_at", "2017-10-24 19:16:41.400703"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-08-06 19:39:54.404530"], ["updated_at", "2017-10-24 19:16:41.405127"], ["id", 121]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et ut sed qui minus aut."], ["body", "Voluptas vel non molestiae facilis. Ipsam ut et quisquam natus ea. Aliquam corporis consequuntur aut. Iusto ex a tempore."], ["user_id", 8], ["created_at", "2017-10-24 19:16:41.410103"], ["updated_at", "2017-10-24 19:16:41.410103"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-12-13 16:35:25.414134"], ["updated_at", "2017-10-24 19:16:41.414582"], ["id", 122]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Exercitationem deserunt in doloremque maiores."], ["body", "Consequuntur qui cumque a facilis asperiores ut eligendi. Recusandae cum impedit qui sint ex. Fuga nostrum exercitationem et cumque quos dolores."], ["user_id", 6], ["created_at", "2017-10-24 19:16:41.418214"], ["updated_at", "2017-10-24 19:16:41.418214"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-02-15 12:25:56.421425"], ["updated_at", "2017-10-24 19:16:41.421910"], ["id", 123]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Corrupti illum ad ducimus."], ["body", "Sed omnis minima dolorem quis vel. Doloremque maxime earum in. Fuga temporibus reprehenderit eaque modi. Tempora impedit dolorum eaque ea sunt dolorem aut."], ["user_id", 15], ["created_at", "2017-10-24 19:16:41.424937"], ["updated_at", "2017-10-24 19:16:41.424937"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-09-18 18:28:09.427529"], ["updated_at", "2017-10-24 19:16:41.427933"], ["id", 124]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Possimus quod facere reiciendis voluptas modi pariatur illo."], ["body", "Error sit sint quis et. Ab voluptatem et aut nihil fuga inventore suscipit. Harum laborum optio ut iusto."], ["user_id", 14], ["created_at", "2017-10-24 19:16:41.430512"], ["updated_at", "2017-10-24 19:16:41.430512"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-09-22 01:20:11.433535"], ["updated_at", "2017-10-24 19:16:41.434069"], ["id", 125]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Accusamus aut sit delectus."], ["body", "Itaque modi fugit dolor voluptate labore est deleniti. Nulla repudiandae libero et qui natus quo. Sed placeat ipsa. Praesentium sequi totam voluptatem et accusamus."], ["user_id", 4], ["created_at", "2017-10-24 19:16:41.437372"], ["updated_at", "2017-10-24 19:16:41.437372"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-09-06 08:17:17.439785"], ["updated_at", "2017-10-24 19:16:41.440226"], ["id", 126]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Qui a perferendis aliquam repudiandae provident voluptatum."], ["body", "Aut ipsa asperiores quibusdam. Non repellat eos dicta neque."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.443020"], ["updated_at", "2017-10-24 19:16:41.443020"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-05-02 05:33:21.445730"], ["updated_at", "2017-10-24 19:16:41.446832"], ["id", 127]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Est tempore ullam quia autem voluptas quae aut."], ["body", "Molestias laborum et distinctio eligendi eos est exercitationem. Commodi veniam corrupti nesciunt et consequuntur vitae. Tenetur autem non soluta exercitationem ut qui optio."], ["user_id", 6], ["created_at", "2017-10-24 19:16:41.450104"], ["updated_at", "2017-10-24 19:16:41.450104"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-07-20 12:01:55.452684"], ["updated_at", "2017-10-24 19:16:41.453193"], ["id", 128]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Velit odio ipsa ex."], ["body", "Quo ullam quia sit doloribus qui aut deserunt. Ab soluta et et eum quia corrupti aliquam."], ["user_id", 7], ["created_at", "2017-10-24 19:16:41.456193"], ["updated_at", "2017-10-24 19:16:41.456193"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-04-21 13:34:06.458844"], ["updated_at", "2017-10-24 19:16:41.459380"], ["id", 129]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cum ex dolorum quia."], ["body", "Doloribus non voluptas voluptatum. Excepturi et laborum voluptas. Quidem blanditiis minus reprehenderit omnis dicta autem veniam. Ipsum alias adipisci ut."], ["user_id", 7], ["created_at", "2017-10-24 19:16:41.463053"], ["updated_at", "2017-10-24 19:16:41.463053"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-12-12 09:50:16.465895"], ["updated_at", "2017-10-24 19:16:41.466385"], ["id", 130]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Deleniti qui et illo tempora dolorem velit."], ["body", "Magni doloremque quae aut. Ut omnis alias eligendi amet. Nostrum ut omnis blanditiis dolorum rem et. Aspernatur suscipit explicabo error."], ["user_id", 4], ["created_at", "2017-10-24 19:16:41.470061"], ["updated_at", "2017-10-24 19:16:41.470061"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-08-26 15:29:56.472176"], ["updated_at", "2017-10-24 19:16:41.472605"], ["id", 131]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et veritatis fuga sed nisi."], ["body", "Tempora magnam praesentium reprehenderit pariatur qui necessitatibus dolore. Velit quos eaque quidem neque voluptas aut. Quia velit perferendis et."], ["user_id", 4], ["created_at", "2017-10-24 19:16:41.476927"], ["updated_at", "2017-10-24 19:16:41.476927"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-01-13 10:21:47.480126"], ["updated_at", "2017-10-24 19:16:41.480554"], ["id", 132]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Illum aspernatur voluptas ratione dolorum."], ["body", "Ab aut quisquam omnis. Sapiente blanditiis pariatur ut."], ["user_id", 6], ["created_at", "2017-10-24 19:16:41.483615"], ["updated_at", "2017-10-24 19:16:41.483615"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-11-14 07:04:06.486598"], ["updated_at", "2017-10-24 19:16:41.487052"], ["id", 133]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sed quam fuga facilis explicabo perferendis quia dolorem et."], ["body", "Ipsam saepe facere facilis amet doloribus aspernatur. Numquam et totam possimus itaque illum enim voluptatibus. Perferendis quis ex."], ["user_id", 15], ["created_at", "2017-10-24 19:16:41.490763"], ["updated_at", "2017-10-24 19:16:41.490763"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-11-05 06:21:25.493425"], ["updated_at", "2017-10-24 19:16:41.493996"], ["id", 134]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Atque placeat temporibus non."], ["body", "Et tempore eveniet voluptatem non sit minima sit. Labore perferendis voluptatem a maiores eius voluptas sint."], ["user_id", 13], ["created_at", "2017-10-24 19:16:41.498577"], ["updated_at", "2017-10-24 19:16:41.498577"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-08-30 03:17:40.500985"], ["updated_at", "2017-10-24 19:16:41.503343"], ["id", 135]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Consequuntur provident iste ut architecto."], ["body", "Et facilis facere maxime quasi sequi ut. Quia occaecati sapiente et dolorem. Rerum dicta ut."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.507802"], ["updated_at", "2017-10-24 19:16:41.507802"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-07-02 04:03:34.510430"], ["updated_at", "2017-10-24 19:16:41.510898"], ["id", 136]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et nihil a vel amet ducimus placeat rem non."], ["body", "Dolorem dolorum aut quaerat velit enim voluptates ut. Odio sit vero quis non blanditiis. Consectetur quisquam architecto odio illo."], ["user_id", 14], ["created_at", "2017-10-24 19:16:41.513716"], ["updated_at", "2017-10-24 19:16:41.513716"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-02-23 01:12:37.517066"], ["updated_at", "2017-10-24 19:16:41.517905"], ["id", 137]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Voluptatem et id amet at ut perspiciatis fugit."], ["body", "Id iste dolore laudantium sunt. Repellendus cum est. Minus est temporibus. Veniam temporibus aut placeat nesciunt ducimus non fugit."], ["user_id", 6], ["created_at", "2017-10-24 19:16:41.522321"], ["updated_at", "2017-10-24 19:16:41.522321"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-07-15 03:01:25.524884"], ["updated_at", "2017-10-24 19:16:41.525594"], ["id", 138]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nostrum atque delectus doloremque eius."], ["body", "Cupiditate asperiores neque. Qui occaecati officia sed architecto non dolores. Neque molestiae repellendus nobis ab vitae dicta."], ["user_id", 9], ["created_at", "2017-10-24 19:16:41.528126"], ["updated_at", "2017-10-24 19:16:41.528126"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-05-11 17:23:23.532500"], ["updated_at", "2017-10-24 19:16:41.533137"], ["id", 139]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Necessitatibus autem non consequuntur illo nemo animi saepe eum."], ["body", "Qui facere fugit nostrum alias omnis ut quia. Adipisci magnam dolores incidunt."], ["user_id", 16], ["created_at", "2017-10-24 19:16:41.536601"], ["updated_at", "2017-10-24 19:16:41.536601"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-12-29 23:15:26.539796"], ["updated_at", "2017-10-24 19:16:41.540212"], ["id", 140]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Consectetur expedita dolorem soluta nulla nam quia."], ["body", "Non rerum aut officia libero mollitia laudantium commodi. Deleniti eveniet voluptate ipsam error nam."], ["user_id", 13], ["created_at", "2017-10-24 19:16:41.545402"], ["updated_at", "2017-10-24 19:16:41.545402"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-04-28 16:06:32.549198"], ["updated_at", "2017-10-24 19:16:41.549604"], ["id", 141]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ut tempore est ea iste ipsam."], ["body", "Deserunt sapiente omnis non et. Officiis cum et voluptates qui quasi possimus totam. Quo accusamus sint animi et omnis adipisci temporibus. Nihil sapiente maiores."], ["user_id", 14], ["created_at", "2017-10-24 19:16:41.552666"], ["updated_at", "2017-10-24 19:16:41.552666"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-07-30 16:02:56.555174"], ["updated_at", "2017-10-24 19:16:41.555561"], ["id", 142]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Corporis soluta error et voluptate consequatur rerum voluptas et."], ["body", "Sequi ducimus harum deleniti dolores voluptatibus id et. Excepturi alias inventore officiis quam fugiat suscipit. Consectetur eos ipsam adipisci."], ["user_id", 9], ["created_at", "2017-10-24 19:16:41.559397"], ["updated_at", "2017-10-24 19:16:41.559397"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-04-13 14:34:46.563807"], ["updated_at", "2017-10-24 19:16:41.564290"], ["id", 143]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Saepe aspernatur nam numquam eos."], ["body", "Ipsum ea fuga molestiae. Aliquid aut quis et eaque vitae temporibus quo. Natus nihil quis debitis labore."], ["user_id", 17], ["created_at", "2017-10-24 19:16:41.569294"], ["updated_at", "2017-10-24 19:16:41.569294"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-07-15 20:03:20.571534"], ["updated_at", "2017-10-24 19:16:41.572293"], ["id", 144]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quod consequatur hic rerum."], ["body", "Quas qui ut ea. Voluptas voluptatibus id ut eum eveniet possimus. Et similique accusantium. Ut architecto dolores labore sunt atque quia id."], ["user_id", 12], ["created_at", "2017-10-24 19:16:41.576136"], ["updated_at", "2017-10-24 19:16:41.576136"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-11-23 02:56:25.578847"], ["updated_at", "2017-10-24 19:16:41.579328"], ["id", 145]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Explicabo asperiores nihil est assumenda at."], ["body", "Occaecati consequatur iusto. Commodi quibusdam laboriosam eaque ex quia."], ["user_id", 16], ["created_at", "2017-10-24 19:16:41.581716"], ["updated_at", "2017-10-24 19:16:41.581716"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-10-06 02:09:00.585201"], ["updated_at", "2017-10-24 19:16:41.585643"], ["id", 146]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Similique omnis eum minus aut ut."], ["body", "Nesciunt ducimus esse et sed assumenda accusamus. Est dolor animi incidunt qui suscipit. Error laborum molestias omnis accusantium iste id qui. Iure ipsam cupiditate commodi omnis."], ["user_id", 17], ["created_at", "2017-10-24 19:16:41.594512"], ["updated_at", "2017-10-24 19:16:41.594512"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-01-05 00:41:15.599845"], ["updated_at", "2017-10-24 19:16:41.600623"], ["id", 147]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Reprehenderit quod odit blanditiis qui molestiae ab recusandae sed."], ["body", "Aut assumenda nostrum. Repellat fugiat commodi error voluptatem est. Cum eos sint rerum necessitatibus repudiandae et aspernatur. A doloribus et molestias."], ["user_id", 14], ["created_at", "2017-10-24 19:16:41.604528"], ["updated_at", "2017-10-24 19:16:41.604528"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-04-01 12:12:59.609441"], ["updated_at", "2017-10-24 19:16:41.609985"], ["id", 148]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sed ducimus ut minima aut."], ["body", "Quae tempora libero nobis id minus. Est vel aliquid dolores dicta voluptas. Velit consequuntur ut delectus pariatur eius. Ut autem minus est maxime ducimus."], ["user_id", 14], ["created_at", "2017-10-24 19:16:41.614400"], ["updated_at", "2017-10-24 19:16:41.614400"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2017-03-03 13:39:03.617740"], ["updated_at", "2017-10-24 19:16:41.618300"], ["id", 149]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quibusdam et consequatur tempora ex aperiam rerum consequatur."], ["body", "Quam ut ut. Ducimus magni similique consequatur aliquid eos animi nisi."], ["user_id", 1], ["created_at", "2017-10-24 19:16:41.623079"], ["updated_at", "2017-10-24 19:16:41.623079"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "wikis" SET "created_at" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["created_at", "2016-11-10 00:14:28.626202"], ["updated_at", "2017-10-24 19:16:41.626813"], ["id", 150]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "wikis"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-10-24 15:17:03 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (330.1ms)
+Completed 200 OK in 530ms (Views: 504.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-10-24 15:17:05 -0400
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BJXVAsn+WsNCb8bT5v7f5kJB5QmAqk9+yT5kLFcrTOsdMfGAZdoS7yqX84PS3T74K6lQL6BfKan848spvccygw==", "user"=>{"email"=>"mattk205@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mattk205@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "role" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 0], ["current_sign_in_at", "2017-10-24 19:17:05.830539"], ["last_sign_in_at", "2017-10-08 20:22:53.823066"], ["sign_in_count", 3], ["updated_at", "2017-10-24 19:17:05.831249"], ["id", 12]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 133ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 15:17:05 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis" for 127.0.0.1 at 2017-10-24 15:17:14 -0400
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering wikis/index.html.erb within layouts/application
+  [1m[36mWiki Load (0.5ms)[0m  [1m[34mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 59ms (Views: 49.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/wikis/3" for 127.0.0.1 at 2017-10-24 15:17:16 -0400
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering wikis/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered wikis/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 54ms (Views: 48.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/wikis/3" for 127.0.0.1 at 2017-10-24 15:17:26 -0400
+Processing by WikisController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GZZfS/yvBEL4cgc+ZcFV4nunXw5SbfKgj5Hw0WxKALhq1uaVvoaDUiQYuux8XvSN04OHsMvTXhDPmUUimLN0qQ==", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "wikis" WHERE "wikis"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/wikis
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/wikis" for 127.0.0.1 at 2017-10-24 15:17:26 -0400
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering wikis/index.html.erb within layouts/application
+  [1m[36mWiki Load (0.4ms)[0m  [1m[34mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+

@@ -5,7 +5,7 @@ require 'faker'
   User.create!(
   email:    Faker::Internet.email,
   password: Faker::Internet.password,
-  role: "Standard"
+  role: :standard
   )
 end
 users = User.all

@@ -4,11 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  after_initialize :init
+  after_initialize {self.role ||= :standard}
 
-    def init
-      self.role = "Standard"           #will set the default value only if it's nil
-    end
+  enum role: [:standard, :admin, :premium]
 
   has_many :wikis, dependent: :destroy
 end
