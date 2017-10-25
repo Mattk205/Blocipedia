@@ -46,6 +46,12 @@ class ChargesController < ApplicationController
     @user = User.find(params[:id])
     @user.update(role: :standard)
 
+    # convert downgrading user's wikis to public
+    @user.wikis.each do |wiki|
+      wiki.private = false
+      wiki.save!
+    end
+
     if @user.save
       flash[:notice] = "#{current_user.email}, your account has been downgraded to Standard."
       redirect_to root_path

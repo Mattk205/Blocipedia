@@ -6,12 +6,10 @@
 </div>
 <div class="row">
   <div class="col-md-8">
-<!-- #7 -->
-    <% @wiki.each do |wiki| %>
+    <% @wikis.each do |wiki| %>
       <div class="media">
         <div class="media-body">
           <h4 class="media-heading">
-<!-- #8 -->
             <%= link_to wiki.title, wiki %>
           </h4>
         </div>
