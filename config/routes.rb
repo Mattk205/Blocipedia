@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :charges, only: [:new, :create, :edit, :update]
   resources :wikis
-
   root to: 'welcome#index'
 
   devise_for :users, controllers: {

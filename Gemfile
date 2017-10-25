@@ -53,3 +53,7 @@ gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
 gem 'pundit'
 
 gem 'redcarpet'
+
+gem 'stripe'
+
+gem 'figaro', '1.0'
