@@ -1,5 +1,5 @@
 class UserPolicy < ApplicationPolicy
   def update?
-      user == resource
+      user == record
   end
 end

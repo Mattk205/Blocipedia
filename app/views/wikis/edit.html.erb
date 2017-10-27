@@ -2,12 +2,9 @@
 
 <div class="row">
   <div class="col-md-4">
-    <p>Guidelines for wikis</p>
-    <ul>
-      <li>Make sure it rhymes.</li>
-      <li>Don't use the letter "A".</li>
-      <li>The incessant use of hashtags will get you banned.</li>
-    </ul>
+    <% if current_user.admin? || current_user.premium? || @wiki.users.include?(current_user) %>
+      <%= render partial: 'collaborators/collaborators_form'%>
+    <% end %>
   </div>
   <div class="col-md-8">
     <%= render partial: 'form', locals: { wiki: @wiki} %>

@@ -14,7 +14,7 @@ users = User.all
 50.times do
 # #1
   wiki = Wiki.create!(
-   user:   users.sample,
+    user:   users.sample,
     title:  Faker::Lorem.sentence,
     body:   Faker::Lorem.paragraph(2),
     private: false
@@ -25,7 +25,7 @@ users = User.all
 end
 wikis = Wiki.all
 
-puts "Seed finished"
+ puts "Seed finished"
  puts "#{User.count} users created"
  puts "#{Wiki.count} wikis created"
 # This file should contain all the record creation needed to seed the database with its default values.

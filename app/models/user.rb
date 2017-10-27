@@ -9,4 +9,6 @@ class User < ApplicationRecord
   enum role: [:standard, :admin, :premium]
 
   has_many :wikis, dependent: :destroy
+  has_many :collaborators
+  has_many :wiki_collaborations, through: :collaborators, source: :wiki
 end

@@ -3,11 +3,7 @@ class WikisController < ApplicationController
   ##before_action :authorize_user, except: [:index, :show, :new, :create]
 
   def index
-    if current_user.standard?
-      @wikis = Wiki.where(private: false)
-    else
-      @wikis = Wiki.all
-    end
+    @wikis = policy_scope(Wiki)
   end
 
  def show
